@@ -10,4 +10,4 @@ cd ../../../Linux_cmake/nheqminer_cpu
 cmake .
 make -j $(nproc)
 cd /root/nheqminer/Linux_cmake/nheqminer_cpu
-./nheqminer_cpu -cd 0 -l zec-eu.suprnova.cc:2143 -u $1.$2 -p YourWorkerPassword $2
+./nheqminer_cpu -cd 0 -l zec.suprnova.cc:2142 -u $1.$2 -p YourWorkerPassword $2
