@@ -1,5 +1,5 @@
 #!/bin/bash
-# Run like curl url | bash -s $address $host $port
+# Run: curl https://gist.githubusercontent.com/amingilani/3a2c35a0e12dea88d48b6d8e6a621cee/raw/initialize.sh | bash -s $address $host $port
 
 # log all this output
 exec 1> >(logger -s -t $(basename initialize)) 2>&1
