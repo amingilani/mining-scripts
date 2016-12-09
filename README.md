@@ -7,7 +7,6 @@ To start, simply copy the following cloud-config script to your new instance and
 ```yaml
 #cloud-config
 
-# replace $url with the raw public url for initialize.sh
 # replace $address with your zcash address
 # replace $host and $port with the host and port of your papertrail log destination
 runcmd:
