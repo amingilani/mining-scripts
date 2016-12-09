@@ -1,7 +1,7 @@
 #!/bin/bash
 # Run like curl url | bash -s $address
 
-cd
+cd ~
 sudo apt-get update && sudo apt-get -y install cmake build-essential libboost-all-dev
 git clone -b Linux https://github.com/nicehash/nheqminer.git
 cd nheqminer/cpu_xenoncat/Linux/asm/
