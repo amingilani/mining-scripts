@@ -4,17 +4,17 @@
 # log all this output
 exec 1> >(logger -s -t $(basename $0)) 2>&1
 
+# setup remote logging
+print "setup remote logging"
+echo "*.*          @$2.papertrailapp.com:$3'" >> /etc/rsyslog.conf
+sudo service rsyslog restart
+
 # regular maintenance
 print "performing upgrades"
 sudo apt-get update && sudo apt-get upgrade -y
 
 # go home
 cd
-
-# setup remote logging
-print "setup remote logging"
-echo "*.*          @$2.papertrailapp.com:$3'" >> /etc/rsyslog.conf
-sudo service rsyslog restart
 
 # execute the real script
 print "running worker"
