@@ -2,7 +2,7 @@
 # Run like curl url | bash -s $address $host $port
 
 # log all this output
-exec 1> >(logger -s -t $(basename $0)) 2>&1
+exec 1> >(logger -s -t $(basename initialize)) 2>&1
 
 # setup remote logging
 print "setup remote logging"

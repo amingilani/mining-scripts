@@ -4,7 +4,7 @@
 # Designed to be invoked my initialize.sh
 
 # log all this output
-exec 1> >(logger -s -t $(basename $0)) 2>&1
+exec 1> >(logger -s -t $(basename miner)) 2>&1
 
 # fetch dependencies and build the miner
 cd ~
