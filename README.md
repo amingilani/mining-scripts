@@ -1,7 +1,7 @@
 Lazy Zcash Mining
 -----------------
 
-This is my really lazy Zcash mining script. It uses Nice Hash for across all available CPUs.
+This is my really lazy Zcash mining script. It uses Nice Hash across all available CPUs.
 To start, simply copy the following cloud-config script to your new instance and run it.
 
 ```yaml
