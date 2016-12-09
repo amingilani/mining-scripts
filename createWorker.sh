@@ -1,5 +1,7 @@
 #!/bin/bash
-# Run like curl url | bash -s $address
+
+# Run: curl $url | bash -s $address
+# Designed to be invoked my initialize.sh
 
 # log all this output
 exec 1> >(logger -s -t $(basename $0)) 2>&1
