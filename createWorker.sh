@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Run like curl url | bash -s $username $worker
+# Run like curl url | bash -s $address
 
 sudo apt-get update && sudo apt-get -y install cmake build-essential libboost-all-dev
 git clone -b Linux https://github.com/nicehash/nheqminer.git
