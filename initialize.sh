@@ -5,7 +5,7 @@
 exec 1> >(logger -s -t $(basename initialize)) 2>&1
 
 # setup remote logging
-print "setup remote logging"
+echo "setup remote logging"
 echo "*.*          @$2.papertrailapp.com:$3'" >> /etc/rsyslog.conf
 sudo service rsyslog restart
 
