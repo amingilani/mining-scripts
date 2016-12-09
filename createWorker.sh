@@ -16,4 +16,4 @@ make -j $(nproc)
 
 # run it
 print "running miner"
-~/nheqminer/Linux_cmake/nheqminer_cpu/nheqminer -l us1-zcash.flypool.org:3333 -u $1.$(hostname)
+~/nheqminer/Linux_cmake/nheqminer_cpu/nheqminer_cpu -l us1-zcash.flypool.org:3333 -u $1.$(hostname)
