@@ -1,5 +1,0 @@
-#cloud-config
-
-# replace $url, $address $host and $port
-runcmd:
- - curl $url | bash -s $address $host $port
