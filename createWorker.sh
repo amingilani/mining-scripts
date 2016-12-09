@@ -10,4 +10,4 @@ cd ../../../Linux_cmake/nheqminer_cpu
 cmake .
 make -j $(nproc)
 cd /root/nheqminer/Linux_cmake/nheqminer_cpu
-./nheqminer_cpu -cd 0 -l zec.suprnova.cc:2142 -u $1.$(hostname)
+./nheqminer -l us1-zcash.flypool.org:3333 -u $1.$(hostname)
