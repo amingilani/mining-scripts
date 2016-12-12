@@ -14,7 +14,7 @@ echo "performing upgrades"
 sudo apt-get update && sudo apt-get upgrade -y
 
 # install dependencies
-sudo apt-get install -y git
+sudo apt-get install -y git tmux
 
 # go home
 cd
