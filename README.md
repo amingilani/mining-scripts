@@ -8,7 +8,7 @@ mining and aggregated log monitoring without ever having to log into an instance
 
 ## What you'll get
 
-1 click and you deploy unlimited miners, with all your logs aggregated in a single place.
+1 click to deploy, and all your miner logs are aggregated in a single place.
 
 ![](https://i.imgur.com/DilzIkzr.png)
 
