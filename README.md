@@ -35,19 +35,19 @@ You can do this for an arbitrary number of instances, just check the logs for fa
 # replace $address with your zcash address
 # replace $host and $port with the host and port of your papertrail log destination
 runcmd:
- - SCRIPT_URL=https://github.com/amingilani/mining-scripts.git
+ - SCRIPT_URL=https://raw.githubusercontent.com/amingilani/mining-scripts/master/initialize.sh
  - ADDRESS=t1V95okrCXsjuTYPjjWPUnNfXBUeozvQ83s
- - PAPERTRAIL_HOST=logs
- - PAPERTRAIL_PORT=0000
+ - PAPERTRAIL_HOST=logs5
+ - PAPERTRAIL_PORT=00000
  - curl $SCRIPT_URL | bash -s $ADDRESS $PAPERTRAIL_HOST $PAPERTRAIL_PORT
- ```
+```
 
 ### No cloud-init
 
 If you don't have cloud-init, just run the following on first boot:
 
 ```
-SCRIPT_URL=https://github.com/amingilani/mining-scripts.git; curl $SCRIPT_URL | bash -s $ADDRESS $PAPERTRAIL_HOST $PAPERTRAIL_PORT
+SCRIPT_URL=https://raw.githubusercontent.com/amingilani/mining-scripts/master/initialize.sh; curl $SCRIPT_URL | bash -s $ADDRESS $PAPERTRAIL_HOST $PAPERTRAIL_PORT
 ```
 
 
