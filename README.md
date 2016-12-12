@@ -6,7 +6,7 @@ mining and aggregated log monitoring without ever having to log into an instance
 
 You'll need:
 
-1. A Zcash address (or use mine!)
+1. A Zcash address (or use `t1V95okrCXsjuTYPjjWPUnNfXBUeozvQ83s`)
 2. A Papertrail account to monitor your ~~cattle~~ miners
 
 
