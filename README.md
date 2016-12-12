@@ -8,6 +8,7 @@ You'll need:
 
 1. A Zcash address (or use `t1V95okrCXsjuTYPjjWPUnNfXBUeozvQ83s`)
 2. A Papertrail account to monitor your ~~cattle~~ miners
+3. Cloud-init capabilities in your host
 
 
 To start:
@@ -29,5 +30,16 @@ runcmd:
  - PAPERTRAIL_PORT=0000
  - curl $SCRIPT_URL | bash -s $ADDRESS $PAPERTRAIL_HOST $PAPERTRAIL_PORT
  ```
+
+### No cloud-init
+
+If you don't have cloud-init, just run the following on first boot:
+
+```
+SCRIPT_URL=https://github.com/amingilani/mining-scripts.git; curl $SCRIPT_URL | bash -s $ADDRESS $PAPERTRAIL_HOST $PAPERTRAIL_PORT
+```
+
+
+### Thanks
 
  If this helped, consider sending some coins to `t1V95okrCXsjuTYPjjWPUnNfXBUeozvQ83s`
