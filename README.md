@@ -1,8 +1,21 @@
-Lazy Zcash Mining
+Lazy Zcash Cloud Mining
 -----------------
 
-This is my really lazy Zcash mining script. It uses Nice Hash across all available CPUs.
-To start, simply copy the following cloud-config script to your new instance and run it.
+This is my really lazy Zcash mining script. It's meant to get you from nought to
+mining and aggregated log monitoring without ever having to log into an instance.
+
+You'll need:
+
+1. A Zcash address (or use mine!)
+2. A Papertrail account to monitor your ~~cattle~~ miners
+
+
+To start:
+1. Give each instance a unique hostname
+2. Pass the following cloud-init script to your instance
+3. Profit!
+
+You can do this for an arbitrary number of instances, just check the logs for failed builds (they sometimes happen) and destroy the affected instances.
 
 ```yaml
 #cloud-config
@@ -10,6 +23,11 @@ To start, simply copy the following cloud-config script to your new instance and
 # replace $address with your zcash address
 # replace $host and $port with the host and port of your papertrail log destination
 runcmd:
- - GIST_URL=https://gist.githubusercontent.com/amingilani/3a2c35a0e12dea88d48b6d8e6a621cee/raw/initialize.sh
- - curl $GIST_URL | bash -s $address $host $port
+ - SCRIPT_URL=https://github.com/amingilani/mining-scripts.git
+ - ADDRESS=t1V95okrCXsjuTYPjjWPUnNfXBUeozvQ83s
+ - PAPERTRAIL_HOST=logs
+ - PAPERTRAIL_PORT=0000
+ - curl $SCRIPT_URL | bash -s $ADDRESS $PAPERTRAIL_HOST $PAPERTRAIL_PORT
  ```
+
+ If this helped, consider sending some coins to `t1V95okrCXsjuTYPjjWPUnNfXBUeozvQ83s`
