@@ -12,18 +12,24 @@ mining and aggregated log monitoring without ever having to log into an instance
 
 ![](https://i.imgur.com/DilzIkzr.png)
 
+### Specs
+
+* Miner: [nheqminer](https://github.com/nicehash/nheqminer)
+* Pool: [flypool](https://zcash.flypool.org)
+
 ## Setup
 
 You'll need:
 
 1. A Zcash address (or use `t1V95okrCXsjuTYPjjWPUnNfXBUeozvQ83s`)
 2. A Papertrail account to monitor your ~~cattle~~ miners
+3. Ubuntu instances (tested on 14.04 & 16.04)
 3. Optional: cloud-init capabilities in your host
 
 
 To start:
 
-1. Give each instance a unique hostname
+1. Give each instance a unique hostname (this will be your worker name)
 2. Pass the following cloud-init script to your instance
 3. Profit!
 
