@@ -6,6 +6,14 @@ Lazy Zcash Cloud Mining
 This is my really lazy Zcash mining script. It's meant to get you from nought to
 mining and aggregated log monitoring without ever having to log into an instance.
 
+## What you'll get
+
+1 click and you deploy unlimited miners, with all your logs aggregated in a single place.
+
+![](https://i.imgur.com/DilzIkzr.png)
+
+## Setup
+
 You'll need:
 
 1. A Zcash address (or use `t1V95okrCXsjuTYPjjWPUnNfXBUeozvQ83s`)
