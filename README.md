@@ -1,7 +1,7 @@
 Lazy Zcash Cloud Mining
 -----------------
 
-**HN? Consider upvoting or leaving feedback.** Even "nice job" means a lot!
+**Followed a link? Consider upvoting or leaving feedback.** Even "nice job" means a lot!
 
 This is my really lazy Zcash mining script. It's meant to get you from nought to
 mining and aggregated log monitoring without ever having to log into an instance.
