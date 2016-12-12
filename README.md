@@ -57,6 +57,9 @@ SCRIPT_URL=https://raw.githubusercontent.com/amingilani/mining-scripts/master/in
 ```
 
 
-### Thanks
+### Price
 
- If this helped, consider sending some coins to `t1V95okrCXsjuTYPjjWPUnNfXBUeozvQ83s`
+These scripts aren't free, but you're allowed to trial them as long as you want.
+When you're ready, pay via:
+1. Code contributions
+2. Zcash: `t1V95okrCXsjuTYPjjWPUnNfXBUeozvQ83s`
