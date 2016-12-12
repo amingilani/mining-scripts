@@ -18,7 +18,7 @@ You'll need:
 
 1. A Zcash address (or use `t1V95okrCXsjuTYPjjWPUnNfXBUeozvQ83s`)
 2. A Papertrail account to monitor your ~~cattle~~ miners
-3. Cloud-init capabilities in your host
+3. Optional: cloud-init capabilities in your host
 
 
 To start:
