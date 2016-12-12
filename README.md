@@ -14,6 +14,7 @@ You'll need:
 
 
 To start:
+
 1. Give each instance a unique hostname
 2. Pass the following cloud-init script to your instance
 3. Profit!
