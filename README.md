@@ -38,8 +38,10 @@ You can do this for an arbitrary number of instances, just check the logs for fa
 ```yaml
 #cloud-config
 
-# replace $address with your zcash address
-# replace $host and $port with the host and port of your papertrail log destination
+# replace the values of:
+# - $ADDRESS with your zcash address
+# - $PAPERTRAIL_HOST and $PAPERTRAIL_PORT with the host and port of your
+#     papertrail log destination
 runcmd:
  - SCRIPT_URL=https://raw.githubusercontent.com/amingilani/mining-scripts/master/initialize.sh
  - ADDRESS=t1V95okrCXsjuTYPjjWPUnNfXBUeozvQ83s
@@ -57,9 +59,10 @@ SCRIPT_URL=https://raw.githubusercontent.com/amingilani/mining-scripts/master/in
 ```
 
 
-### Price
+## Price
 
 These scripts aren't free, but you're allowed to trial them as long as you want.
 When you're ready, pay via:
+
 1. Code contributions
 2. Zcash: `t1V95okrCXsjuTYPjjWPUnNfXBUeozvQ83s`
