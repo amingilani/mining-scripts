@@ -55,7 +55,12 @@ runcmd:
 If you don't have cloud-init, just run the following on first boot:
 
 ```
-SCRIPT_URL=https://raw.githubusercontent.com/amingilani/mining-scripts/master/initialize.sh; curl $SCRIPT_URL | bash -s $ADDRESS $PAPERTRAIL_HOST $PAPERTRAIL_PORT
+# Change ADDRESS, and PAPERTRAIL variables
+ADDRESS=t1V95okrCXsjuTYPjjWPUnNfXBUeozvQ83s && \
+PAPERTRAIL_HOST=logs5 && \
+PAPERTRAIL_PORT=00000 && \
+SCRIPT_URL=https://raw.githubusercontent.com/amingilani/mining-scripts/master/initialize.sh && \
+curl $SCRIPT_URL | bash -s $ADDRESS $PAPERTRAIL_HOST $PAPERTRAIL_PORT
 ```
 
 
