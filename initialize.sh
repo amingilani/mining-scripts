@@ -14,12 +14,15 @@ echo "performing upgrades"
 sudo apt-get update && sudo apt-get upgrade -y
 
 # install dependencies
-sudo apt-get install -y git tmux
+sudo apt-get install -y git tmux docker docker.io
+
+# pull the docker image
+docker pull amingilani/nheqminer:latest
 
 # go home
 cd
 
 # execute the real script
 echo "running worker"
-git clone https://gist.github.com/3a2c35a0e12dea88d48b6d8e6a621cee.git scripts
+git clone https://github.com/amingilani/mining-scripts.git scripts
 tmux new-session -d "cat scripts/miner.sh | bash -s $1"
